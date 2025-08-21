@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes da Marvel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #b11313;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .movie-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .movie-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .movie-card h3 {
+            margin: 10px;
+            font-size: 1.4em;
+        }
+        .movie-card p {
+            margin: 0 10px 10px;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filmes da Marvel</h1>
+        <p>Explore o Universo Cinematográfico da Marvel</p>
+    </header>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#movies">Filmes</a>
+        <a href="#about">Sobre</a>
+    </nav>
+    <div class="container">
+        <section id="movies">
+            <h2>Filmes em Destaque</h2>
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x300?text=Homem+de+Ferro" alt="Homem de Ferro">
+                    <h3>Homem de Ferro</h3>
+                    <p>Lançamento: 2008</p>
+                    <p>Tony Stark, um gênio inventor, cria uma armadura para combater o crime.</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x300?text=Vingadores" alt="Vingadores">
+                    <h3>Vingadores</h3>
+                    <p>Lançamento: 2012</p>
+                    <p>Heróis se unem para salvar a Terra de uma invasão alienígena.</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x300?text=Pantera+Negra" alt="Pantera Negra">
+                    <h3>Pantera Negra</h3>
+                    <p>Lançamento: 2018</p>
+                    <p>T'Challa retorna a Wakanda para assumir o trono e proteger sua nação.</p>
+                </div>
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x300?text=Capitã+Marvel" alt="Capitã Marvel">
+                    <h3>Capitã Marvel</h3>
+                    <p>Lançamento: 2019</p>
+                    <p>Carol Danvers descobre seus poderes e se torna uma das heroínas mais poderosas do universo.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Filmes da Marvel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
